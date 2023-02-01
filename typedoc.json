@@ -1,0 +1,17 @@
+{
+  "out": "docs",
+  "name": "NumberKit",
+  "readme": "none",
+  "githubPages": false,
+  "hideInPageTOC": true,
+  "disableSources": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "excludeExternals": true,
+  "plugin": ["typedoc-plugin-markdown"],
+  "entryPoints": [
+    "./src/operations/index.ts",
+    "./src/randoms/index.ts",
+    "./src/utils/index.ts"
+  ]
+}
