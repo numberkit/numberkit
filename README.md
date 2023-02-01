@@ -32,9 +32,11 @@ pnpm add numberkit
 
 ## Documentation
 
-- [Operations](/docs/modules/operations.md): Provides various mathematical operations.
-- [Randoms](/docs/modules/randoms.md): Provides various functions that generate random values.
-- [Utils](/docs/modules/utils.md): Provides helper functions and utilities for working with numbers.
+NumberKit consists of three modules:
+
+- [Core](/docs/modules/core.md): This module provides a comprehensive collection of mathematical operations and functions for various calculations.
+- [Random](/docs/modules/random.md): This module provides functions for generating random numbers, including integers, floating-point numbers, and more.
+- [Validators](/docs/modules/validators.md): This module provides functions for validating input data to ensure accuracy and prevent errors.
 
 ## Contributing
 

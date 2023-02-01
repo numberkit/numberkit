@@ -1,6 +1,6 @@
-[NumberKit](../README.md) / operations
+[NumberKit](../README.md) / core
 
-# Module: operations
+# Module: core
 
 ## Functions
 
