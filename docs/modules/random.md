@@ -1,6 +1,6 @@
-[NumberKit](../README.md) / randoms
+[NumberKit](../README.md) / random
 
-# Module: randoms
+# Module: random
 
 ## Functions
 

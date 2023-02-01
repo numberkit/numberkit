@@ -1,6 +1,6 @@
-[NumberKit](../README.md) / utils
+[NumberKit](../README.md) / validators
 
-# Module: utils
+# Module: validators
 
 ## Functions
 

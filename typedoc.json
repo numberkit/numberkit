@@ -10,8 +10,8 @@
   "excludeExternals": true,
   "plugin": ["typedoc-plugin-markdown"],
   "entryPoints": [
-    "./src/operations/index.ts",
-    "./src/randoms/index.ts",
-    "./src/utils/index.ts"
+    "./src/core/index.ts",
+    "./src/random/index.ts",
+    "./src/validators/index.ts"
   ]
 }
