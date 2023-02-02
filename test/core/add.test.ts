@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { add } from "../../src";
+import { add } from "../../src/core";
 
 describe("add", () => {
   it("should add two numbers correctly", () => {

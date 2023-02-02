@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { multiply } from "../../src";
+import { multiply } from "../../src/core";
 
 describe("multiply", () => {
   it("should multiply two numbers correctly", () => {
