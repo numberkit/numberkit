@@ -3,25 +3,46 @@ import esbuild from "rollup-plugin-esbuild";
 
 const bundle = (config) => ({
   ...config,
-  input: "src/index.ts",
   external: (id) => !/^[./]/.test(id),
 });
 
-export default [
+const coreBundle = [
   bundle({
     plugins: [esbuild()],
-    output: [
-      {
-        format: "es",
-        file: "dist/index.js",
-      },
-    ],
+    input: "src/core/index.ts",
+    output: { format: "es", file: "dist/index.js" },
   }),
   bundle({
     plugins: [dts()],
-    output: {
-      format: "es",
-      file: "dist/index.d.ts",
-    },
+    input: "src/core/index.ts",
+    output: { format: "es", file: "dist/index.d.ts" },
   }),
 ];
+
+const randomBundle = [
+  bundle({
+    plugins: [esbuild()],
+    input: "src/random/index.ts",
+    output: { format: "es", file: "dist/random/index.js" },
+  }),
+  bundle({
+    plugins: [dts()],
+    input: "src/random/index.ts",
+    output: { format: "es", file: "dist/random/index.d.ts" },
+  }),
+];
+
+const validatorsBundle = [
+  bundle({
+    plugins: [esbuild()],
+    input: "src/validators/index.ts",
+    output: { format: "es", file: "dist/validators/index.js" },
+  }),
+  bundle({
+    plugins: [dts()],
+    input: "src/validators/index.ts",
+    output: { format: "es", file: "dist/validators/index.d.ts" },
+  }),
+];
+
+export default [...coreBundle, ...randomBundle, ...validatorsBundle];
