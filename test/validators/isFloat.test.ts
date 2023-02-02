@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { isFloat } from "../../src";
+import { isFloat } from "../../src/validators";
 
 describe("isFloat", () => {
   it("returns true for a floating-point number", () => {

@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { randomInteger } from "../../src";
+import { randomInteger } from "../../src/random";
 
 describe("randomInteger", () => {
   it("throws an error if either `min` or `max` is not a number", () => {
