@@ -10,6 +10,10 @@
 
 Determines if the value is an even number.
 
+**`Throws`**
+
+If the value is not a number.
+
 #### Parameters
 
 | Name | Type | Description |
@@ -29,6 +33,10 @@ ___
 ▸ **isFloat**(`value`): `boolean`
 
 Determines whether the given `value` is a floating-point number.
+
+**`Throws`**
+
+If the `value` is not a number.
 
 #### Parameters
 
@@ -50,6 +58,10 @@ ___
 
 Determines whether the given `value` is an integer.
 
+**`Throws`**
+
+If the `value` is not a number.
+
 #### Parameters
 
 | Name | Type | Description |
@@ -69,6 +81,10 @@ ___
 ▸ **isOddNumber**(`value`): `boolean`
 
 Determines if the value is an odd number.
+
+**`Throws`**
+
+If the value is not a number.
 
 #### Parameters
 

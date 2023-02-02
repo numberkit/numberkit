@@ -16,7 +16,7 @@ describe("isEvenNumber", () => {
     expect(isEvenNumber(5)).toBe(false);
   });
 
-  it("returns false if the value is not a number", () => {
+  it("returns false if the value is not a finite number", () => {
     expect(isEvenNumber(NaN)).toBe(false);
     expect(isEvenNumber(Infinity)).toBe(false);
     expect(isEvenNumber(-Infinity)).toBe(false);
