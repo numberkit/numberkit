@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { divide } from "../../src";
+import { divide } from "../../src/core";
 
 describe("divide", () => {
   it("should divide two numbers correctly", () => {

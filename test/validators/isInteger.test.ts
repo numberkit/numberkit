@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { isInteger } from "../../src";
+import { isInteger } from "../../src/validators";
 
 describe("isInteger", () => {
   it("returns true for an integer", () => {

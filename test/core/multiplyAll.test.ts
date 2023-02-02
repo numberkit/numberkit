@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { multiplyAll } from "../../src";
+import { multiplyAll } from "../../src/core";
 
 describe("multiplyAll", () => {
   it("should return the product of all numbers in the array", () => {

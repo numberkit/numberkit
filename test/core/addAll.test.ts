@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { addAll } from "../../src";
+import { addAll } from "../../src/core";
 
 describe("addAll", () => {
   it("should return the sum of all numbers in the array", () => {
