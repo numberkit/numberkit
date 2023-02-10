@@ -4,9 +4,9 @@
 
 ## Functions
 
-### isEvenNumber
+### isEven
 
-▸ **isEvenNumber**(`value`): `boolean`
+▸ **isEven**(`value`): `boolean`
 
 Determines if the value is an even number.
 
@@ -76,9 +76,9 @@ Indicates if the `value` is an integer.
 
 ___
 
-### isOddNumber
+### isOdd
 
-▸ **isOddNumber**(`value`): `boolean`
+▸ **isOdd**(`value`): `boolean`
 
 Determines if the value is an odd number.
 

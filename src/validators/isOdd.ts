@@ -6,7 +6,7 @@ import { NAN_VALUE_ERROR } from "./_constants";
  * @throws {Error} If the value is not a number.
  * @returns Indicates if the `value` is an odd number.
  */
-export function isOddNumber(value: number): boolean {
+export function isOdd(value: number): boolean {
   if (typeof value !== "number") throw new Error(NAN_VALUE_ERROR);
 
   return isFinite(value) && value % 2 !== 0;
