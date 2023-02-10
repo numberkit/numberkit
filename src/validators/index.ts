@@ -1,4 +1,4 @@
 export { isFloat } from "./isFloat";
 export { isInteger } from "./isInteger";
-export { isOddNumber } from "./isOddNumber";
-export { isEvenNumber } from "./isEvenNumber";
+export { isOdd } from "./isOdd";
+export { isEven } from "./isEven";
