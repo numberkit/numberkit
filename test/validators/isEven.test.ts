@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { NAN_VALUE_ERROR } from "../../src/validators/_constants";
+import { NKError } from "../../src/errors";
 import { isEven } from "../../src/validators/isEven";
 
 describe("isEven", () => {
@@ -24,7 +24,7 @@ describe("isEven", () => {
 
   it("throws an error if the value is not a number", () => {
     expect(() => isEven("not a number" as unknown as number)).toThrowError(
-      NAN_VALUE_ERROR
+      NKError.NAN_VALUE
     );
   });
 });

@@ -1,3 +1,5 @@
+import { NKError } from "../errors";
+
 /**
  * Multiplies two numbers.
  *
@@ -8,7 +10,12 @@
  */
 export function multiply(multiplier: number, multiplicand: number): number {
   if (typeof multiplier !== "number" || typeof multiplicand !== "number") {
-    throw new Error("Both parameters must be numbers");
+    const errorMessage = NKError.BOTH_PARAMS_NAN_VALUES;
+    const errorMessageWithValues = errorMessage
+      .replace("{value1}", "multiplier")
+      .replace("{value2}", "multiplicand");
+
+    throw new Error(errorMessageWithValues);
   }
 
   return multiplier * multiplicand;

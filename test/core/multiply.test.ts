@@ -11,11 +11,11 @@ describe("multiply", () => {
 
   it("throws an error if either augend or multiplyend is not a number", () => {
     expect(() => multiply("2" as unknown as number, 3)).toThrowError(
-      "Both parameters must be numbers"
+      "Both multiplier and multiplicand must be numbers"
     );
 
     expect(() => multiply(2, {} as unknown as number)).toThrowError(
-      "Both parameters must be numbers"
+      "Both multiplier and multiplicand must be numbers"
     );
   });
 });

@@ -1,3 +1,5 @@
+import { NKError } from "../errors";
+
 /**
  * Adds two numbers.
  *
@@ -8,7 +10,12 @@
  */
 export function add(augend: number, addend: number): number {
   if (typeof augend !== "number" || typeof addend !== "number") {
-    throw new Error("Both parameters must be numbers");
+    const errorMessage = NKError.BOTH_PARAMS_NAN_VALUES;
+    const errorMessageWithValues = errorMessage
+      .replace("{value1}", "augend")
+      .replace("{value2}", "addend");
+
+    throw new Error(errorMessageWithValues);
   }
 
   return augend + addend;

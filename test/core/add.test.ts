@@ -11,11 +11,11 @@ describe("add", () => {
 
   it("throws an error if either augend or addend is not a number", () => {
     expect(() => add("2" as unknown as number, 3)).toThrowError(
-      "Both parameters must be numbers"
+      "Both augend and addend must be numbers"
     );
 
     expect(() => add(2, {} as unknown as number)).toThrowError(
-      "Both parameters must be numbers"
+      "Both augend and addend must be numbers"
     );
   });
 });

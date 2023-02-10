@@ -1,3 +1,5 @@
+import { NKError } from "../errors";
+
 /**
  * Adds all numbers in an array together.
  *
@@ -9,7 +11,7 @@ export function addAll(numbers: number[]): number {
   if (numbers.length === 0) return NaN;
 
   if (!numbers.every((n) => typeof n === "number")) {
-    throw new Error("All elements in the array must be numbers");
+    throw new Error(NKError.ARRAY_CONTAINS_NAN_VALUES);
   }
 
   return numbers.reduce((sum, n) => sum + n, 0);

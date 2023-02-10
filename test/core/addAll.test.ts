@@ -15,7 +15,7 @@ describe("addAll", () => {
 
   it("should throw an error if any element in the array is not a number", () => {
     expect(() => addAll([2, 3, "4" as unknown as number])).toThrowError(
-      "All elements in the array must be numbers"
+      "The array must contain only numbers"
     );
   });
 });
