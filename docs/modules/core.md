@@ -33,11 +33,15 @@ ___
 
 ▸ **addAll**(`numbers`): `number`
 
-Adds all numbers in an array together.
+Adds all numbers in the array each other.
 
 **`Throws`**
 
-If any element in the `numbers` array is not a number.
+If the `numbers` array is less than two numbers long.
+
+**`Throws`**
+
+If the `numbers` array contains any non-number values.
 
 #### Parameters
 
@@ -49,7 +53,7 @@ If any element in the `numbers` array is not a number.
 
 `number`
 
-The sum of all numbers in the array, or NaN if the array is empty.
+The sum of all numbers in the array.
 
 ___
 
@@ -82,6 +86,38 @@ The quotient of the two numbers.
 
 ___
 
+### divideAll
+
+▸ **divideAll**(`numbers`): `number`
+
+Divides all numbers in the array each other.
+
+**`Throws`**
+
+If the `numbers` array is less than two numbers long.
+
+**`Throws`**
+
+If the `numbers` array contains any non-number values.
+
+**`Throws`**
+
+If the `numbers` array contains any zero values.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `numbers` | `number`[] | The numbers to be divided. |
+
+#### Returns
+
+`number`
+
+The quotient of all numbers in the array.
+
+___
+
 ### multiply
 
 ▸ **multiply**(`multiplier`, `multiplicand`): `number`
@@ -111,11 +147,15 @@ ___
 
 ▸ **multiplyAll**(`numbers`): `number`
 
-Multiplies all numbers in an array together.
+Multiplies all numbers in the array each other.
 
 **`Throws`**
 
-If any element in the `numbers` array is not a number.
+If the `numbers` array is less than two numbers long.
+
+**`Throws`**
+
+If the `numbers` array contains any non-number values.
 
 #### Parameters
 
@@ -127,7 +167,7 @@ If any element in the `numbers` array is not a number.
 
 `number`
 
-The product of all numbers in the array, or NaN if the array is empty.
+The product of all numbers in the array.
 
 ___
 
@@ -153,3 +193,31 @@ If either `minuend` or `subtrahend` is not a number.
 `number`
 
 The difference between the two numbers.
+
+___
+
+### subtractAll
+
+▸ **subtractAll**(`numbers`): `number`
+
+Subtracts all numbers in an array from each other.
+
+**`Throws`**
+
+If the `numbers` array is less than two numbers long.
+
+**`Throws`**
+
+If the `numbers` array contains any non-number values.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `numbers` | `number`[] | The numbers to be subtracted. |
+
+#### Returns
+
+`number`
+
+The difference of all numbers in the array.
