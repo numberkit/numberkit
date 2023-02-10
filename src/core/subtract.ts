@@ -1,10 +1,10 @@
 import { NKError } from "../errors";
 
 /**
- * Subtracts one number from another.
+ * Subtracts two numbers.
  *
- * @param {number} minuend - The number from which `subtrahend` will be subtracted.
- * @param {number} subtrahend - The number to be subtracted from `minuend`.
+ * @param {number} minuend - The first number in a subtraction.
+ * @param {number} subtrahend - The second number in a subtraction.
  * @throws {Error} If either `minuend` or `subtrahend` is not a number.
  * @return {number} The difference between the two numbers.
  */

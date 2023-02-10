@@ -18,8 +18,8 @@ If either `augend` or `addend` is not a number.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `augend` | `number` | The first number to be added. |
-| `addend` | `number` | The second number to be added. |
+| `augend` | `number` | The first number in an addition. |
+| `addend` | `number` | The second number in an addition. |
 
 #### Returns
 
@@ -57,7 +57,7 @@ ___
 
 ▸ **divide**(`dividend`, `divisor`): `number`
 
-Divides one number by another.
+Divides two numbers.
 
 **`Throws`**
 
@@ -65,20 +65,20 @@ If either `dividend` or `divisor` is not a number.
 
 **`Throws`**
 
-If `divisor` is 0.
+If `divisor` is zero.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `dividend` | `number` | The number to be divided. |
-| `divisor` | `number` | The number to divide by. |
+| `dividend` | `number` | The first number in a division. |
+| `divisor` | `number` | The second number in a division. |
 
 #### Returns
 
 `number`
 
-The result of dividing `dividend` by `divisor`.
+The quotient of the two numbers.
 
 ___
 
@@ -96,8 +96,8 @@ If either `multiplier` or `multiplicand` is not a number.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `multiplier` | `number` | The first number to be multiplied. |
-| `multiplicand` | `number` | The second number to be multiplied. |
+| `multiplier` | `number` | The first number in a multiplication. |
+| `multiplicand` | `number` | The second number in a multiplication. |
 
 #### Returns
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **subtract**(`minuend`, `subtrahend`): `number`
 
-Subtracts one number from another.
+Subtracts two numbers.
 
 **`Throws`**
 
@@ -145,8 +145,8 @@ If either `minuend` or `subtrahend` is not a number.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `minuend` | `number` | The number from which `subtrahend` will be subtracted. |
-| `subtrahend` | `number` | The number to be subtracted from `minuend`. |
+| `minuend` | `number` | The first number in a subtraction. |
+| `subtrahend` | `number` | The second number in a subtraction. |
 
 #### Returns
 

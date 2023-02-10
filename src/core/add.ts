@@ -3,8 +3,8 @@ import { NKError } from "../errors";
 /**
  * Adds two numbers.
  *
- * @param {number} augend - The first number to be added.
- * @param {number} addend - The second number to be added.
+ * @param {number} augend - The first number in an addition.
+ * @param {number} addend - The second number in an addition.
  * @throws {Error} If either `augend` or `addend` is not a number.
  * @return {number} The sum of the two numbers.
  */
