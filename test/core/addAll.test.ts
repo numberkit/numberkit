@@ -9,8 +9,14 @@ describe("addAll", () => {
     expect(addAll([1, 2, 3, 4, 5])).toEqual(15);
   });
 
-  it("should return NaN if the array is empty", () => {
-    expect(isNaN(addAll([]))).toBe(true);
+  it("should throw an error if the array is less than two numbers long", () => {
+    expect(() => addAll([])).toThrowError(
+      "The array must contain at least two numbers"
+    );
+
+    expect(() => addAll([1])).toThrowError(
+      "The array must contain at least two numbers"
+    );
   });
 
   it("should throw an error if any element in the array is not a number", () => {

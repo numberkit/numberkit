@@ -9,8 +9,14 @@ describe("multiplyAll", () => {
     expect(multiplyAll([1, 2, 3, 4, 5])).toEqual(120);
   });
 
-  it("should return NaN if the array is empty", () => {
-    expect(isNaN(multiplyAll([]))).toBe(true);
+  it("should throw an error if the array is less than two numbers long", () => {
+    expect(() => multiplyAll([])).toThrowError(
+      "The array must contain at least two numbers"
+    );
+
+    expect(() => multiplyAll([1])).toThrowError(
+      "The array must contain at least two numbers"
+    );
   });
 
   it("should throw an error if any element in the array is not a number", () => {

@@ -1,14 +1,14 @@
 import { NKError } from "../errors";
 
 /**
- * Adds all numbers in the array each other.
+ * Subtracts all numbers in an array from each other.
  *
- * @param {number[]} numbers - The numbers to be added.
+ * @param {number[]} numbers - The numbers to be subtracted.
  * @throws {Error} If the `numbers` array is less than two numbers long.
  * @throws {Error} If the `numbers` array contains any non-number values.
- * @return {number} The sum of all numbers in the array.
+ * @return {number} The difference of all numbers in the array.
  */
-export function addAll(numbers: number[]): number {
+export function subtractAll(numbers: number[]): number {
   if (numbers.length < 2) {
     throw new Error(NKError.ARRAY_LENGTH_LESS_THAN_TWO);
   }
@@ -17,11 +17,11 @@ export function addAll(numbers: number[]): number {
     throw new Error(NKError.ARRAY_CONTAINS_NAN_VALUES);
   }
 
-  let sum = numbers[0];
+  let difference = numbers[0];
 
   for (let i = 1; i < numbers.length; i++) {
-    sum += numbers[i];
+    difference -= numbers[i];
   }
 
-  return sum;
+  return difference;
 }
