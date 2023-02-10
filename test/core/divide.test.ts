@@ -10,19 +10,19 @@ describe("divide", () => {
 
   it("should throw an error if either parameter is not a number", () => {
     expect(() => divide(10, "2" as unknown as number)).toThrowError(
-      "Both parameters must be numbers"
+      "Both dividend and divisor must be numbers"
     );
 
     expect(() => divide("10" as unknown as number, 2)).toThrowError(
-      "Both parameters must be numbers"
+      "Both dividend and divisor must be numbers"
     );
 
     expect(() =>
       divide("10" as unknown as number, "2" as unknown as number)
-    ).toThrowError("Both parameters must be numbers");
+    ).toThrowError("Both dividend and divisor must be numbers");
   });
 
   it("should throw an error if divisor is 0", () => {
-    expect(() => divide(10, 0)).toThrowError("Cannot divide by zero");
+    expect(() => divide(10, 0)).toThrowError("The divisor cannot be zero");
   });
 });

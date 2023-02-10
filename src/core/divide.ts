@@ -1,19 +1,26 @@
+import { NKError } from "../errors";
+
 /**
- * Divides one number by another.
+ * Divides two numbers.
  *
- * @param {number} dividend - The number to be divided.
- * @param {number} divisor - The number to divide by.
+ * @param {number} dividend - The first number in a division.
+ * @param {number} divisor - The second number in a division.
  * @throws {Error} If either `dividend` or `divisor` is not a number.
- * @throws {Error} If `divisor` is 0.
- * @return {number} The result of dividing `dividend` by `divisor`.
+ * @throws {Error} If `divisor` is zero.
+ * @return {number} The quotient of the two numbers.
  */
 export function divide(dividend: number, divisor: number): number {
   if (typeof dividend !== "number" || typeof divisor !== "number") {
-    throw new Error("Both parameters must be numbers");
+    const errorMessage = NKError.BOTH_PARAMS_NAN_VALUES;
+    const errorMessageWithValues = errorMessage
+      .replace("{value1}", "dividend")
+      .replace("{value2}", "divisor");
+
+    throw new Error(errorMessageWithValues);
   }
 
   if (divisor === 0) {
-    throw new Error("Cannot divide by zero");
+    throw new Error(NKError.ZERO_DIVISOR);
   }
 
   return dividend / divisor;

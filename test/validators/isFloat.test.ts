@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { NKError } from "../../src/errors";
 
 import { isFloat } from "../../src/validators";
-import { NAN_VALUE_ERROR } from "../../src/validators/_constants";
 
 describe("isFloat", () => {
   it("returns true for a floating-point number", () => {
@@ -22,7 +22,7 @@ describe("isFloat", () => {
 
   it("throws an error if the value is not a number", () => {
     expect(() => isFloat("not a number" as unknown as number)).toThrowError(
-      NAN_VALUE_ERROR
+      NKError.NAN_VALUE
     );
   });
 });
