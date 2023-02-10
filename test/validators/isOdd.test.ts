@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
+import { NKError } from "../../src/errors";
 import { isOdd } from "../../src/validators";
-import { NAN_VALUE_ERROR } from "../../src/validators/_constants";
 
 describe("isOdd", () => {
   it("returns true if the value is not an even number", () => {
@@ -22,7 +22,7 @@ describe("isOdd", () => {
 
   it("throws an error if the value is not a number", () => {
     expect(() => isOdd("not a number" as unknown as number)).toThrowError(
-      NAN_VALUE_ERROR
+      NKError.NAN_VALUE
     );
   });
 });

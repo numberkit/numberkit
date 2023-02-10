@@ -1,4 +1,4 @@
-import { NAN_VALUE_ERROR } from "./_constants";
+import { NKError } from "../errors";
 
 /**
  * Determines if the value is an odd number.
@@ -7,7 +7,7 @@ import { NAN_VALUE_ERROR } from "./_constants";
  * @returns Indicates if the `value` is an odd number.
  */
 export function isOdd(value: number): boolean {
-  if (typeof value !== "number") throw new Error(NAN_VALUE_ERROR);
+  if (typeof value !== "number") throw new Error(NKError.NAN_VALUE);
 
   return isFinite(value) && value % 2 !== 0;
 }

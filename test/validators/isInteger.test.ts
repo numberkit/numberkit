@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 
+import { NKError } from "../../src/errors";
 import { isInteger } from "../../src/validators";
-import { NAN_VALUE_ERROR } from "../../src/validators/_constants";
 
 describe("isInteger", () => {
   it("returns true for an integer", () => {
@@ -22,7 +22,7 @@ describe("isInteger", () => {
 
   it("throws an error if the value is not a number", () => {
     expect(() => isInteger("not a number" as unknown as number)).toThrowError(
-      NAN_VALUE_ERROR
+      NKError.NAN_VALUE
     );
   });
 });

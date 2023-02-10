@@ -1,4 +1,4 @@
-import { NAN_VALUE_ERROR } from "./_constants";
+import { NKError } from "../errors";
 
 /**
  * Determines whether the given `value` is an integer.
@@ -8,7 +8,7 @@ import { NAN_VALUE_ERROR } from "./_constants";
  * @return {boolean} Indicates if the `value` is an integer.
  */
 export function isInteger(value: number): boolean {
-  if (typeof value !== "number") throw new Error(NAN_VALUE_ERROR);
+  if (typeof value !== "number") throw new Error(NKError.NAN_VALUE);
 
   return isFinite(value) && value % 1 === 0;
 }

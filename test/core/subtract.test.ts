@@ -11,11 +11,11 @@ describe("subtract", () => {
 
   it("throws an error if either augend or subtractend is not a number", () => {
     expect(() => subtract("2" as unknown as number, 3)).toThrowError(
-      "Both parameters must be numbers"
+      "Both minuend and subtrahend must be numbers"
     );
 
     expect(() => subtract(2, {} as unknown as number)).toThrowError(
-      "Both parameters must be numbers"
+      "Both minuend and subtrahend must be numbers"
     );
   });
 });

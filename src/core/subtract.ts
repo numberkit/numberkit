@@ -1,3 +1,5 @@
+import { NKError } from "../errors";
+
 /**
  * Subtracts one number from another.
  *
@@ -8,7 +10,12 @@
  */
 export function subtract(minuend: number, subtrahend: number): number {
   if (typeof minuend !== "number" || typeof subtrahend !== "number") {
-    throw new Error("Both parameters must be numbers");
+    const errorMessage = NKError.BOTH_PARAMS_NAN_VALUES;
+    const errorMessageWithValues = errorMessage
+      .replace("{value1}", "minuend")
+      .replace("{value2}", "subtrahend");
+
+    throw new Error(errorMessageWithValues);
   }
 
   return minuend - subtrahend;
