@@ -1,13 +1,13 @@
 import { NKError } from "../errors";
 
 /**
- * Divides one number by another.
+ * Divides two numbers.
  *
- * @param {number} dividend - The number to be divided.
- * @param {number} divisor - The number to divide by.
+ * @param {number} dividend - The first number in a division.
+ * @param {number} divisor - The second number in a division.
  * @throws {Error} If either `dividend` or `divisor` is not a number.
- * @throws {Error} If `divisor` is 0.
- * @return {number} The result of dividing `dividend` by `divisor`.
+ * @throws {Error} If `divisor` is zero.
+ * @return {number} The quotient of the two numbers.
  */
 export function divide(dividend: number, divisor: number): number {
   if (typeof dividend !== "number" || typeof divisor !== "number") {
